@@ -36,3 +36,4 @@ It means that augmentation step will produce more samples for clusters with less
 Folder name &mdash; *my_balanced_model*
 * **cluster_df.csv** &mdash; pre-clustered information for images in *stage1_train* folder.
 * **filename.joblib** &mdash; pre-trained K-means model.
+* **my_balanced_modelv1** &mdash; model with minimum Dice coefficient 0.44
