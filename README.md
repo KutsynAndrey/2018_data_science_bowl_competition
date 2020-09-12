@@ -9,7 +9,7 @@
 * **competition's data link: https://www.kaggle.com/c/data-science-bowl-2018/data**
 
 ## Solution
-<p>The task was to create model for image segmentation on 2018 Data Science Bowl competition. During EDA it was noticed, that data has 3 fairly different classes that can be clustered using K-means cluster algorithm. The clusters also have obvious imbalance in numbers of objects that can be a problem. One way to solve that can be returning balance to data using data augmentation techniques.<p>
+<p>The task was to create model for image segmentation on 2018 Data Science Bowl competition. During EDA it was noticed, that data has 3 fairly different classes that can be clustered using K-means algorithm. The clusters also have obvious imbalance in numbers of objects that can be a problem. One way to solve that can be returning balance to data using data augmentation techniques.<p>
 
 <p> Also there was one image with incorrect mask, that should be erased from dataset <p>
 
