@@ -11,7 +11,8 @@
 ## Solution
 <p>The task was to create model for image segmentation on 2018 Data Science Bowl competition. During EDA it was noticed, that data has 3 fairly different classes that can be clustered using K-means algorithm. The clusters also have obvious imbalance in numbers of objects that can be a problem. One way to solve that can be returning balance to data using data augmentation techniques.<p>
 
-<p> Also there was one image with incorrect mask, that should be erased from dataset <p>
+<p> Also there was one image with incorrect mask, that should be erased from dataset before training<p>  
+Image's id is "7b38c9173ebe69b4c6ba7e703c0c27f39305d9b2910f46405993d2ea7a963b80".
 
 
 ## Files' descriptions
