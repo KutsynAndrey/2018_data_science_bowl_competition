@@ -27,8 +27,8 @@
 * **trainer.py** &mdash; script for default training U-net model. Uses pre-defined augmentation that  
 can be changed in *data_preprocessing.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.  
 Order of arguments is important. In the end saves model to folder with name *my_model*. The name can be changed at line 42.
-* **trainer_balanced_data.py** &mdash; train data using balanced augmentation between 3 clusters.  
+* **trainer_balanced_data.py** &mdash; trains model using balanced augmentation between 3 clusters.  
 It means that augmentation step will produce more samples for clusters with less size. Takes the same arguments as *trainer.py*.  
-Folder name *my_balanced_model*
+Folder name &mdash; *my_balanced_model*
 * **cluster_df.csv** &mdash; pre-clustered information for images in *stage1_train* folder.
 * **filename.joblib** &mdash; pre-trained K-means model.
