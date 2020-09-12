@@ -25,7 +25,7 @@
 * **show_results.py** &mdash; script for displaying inputs and outputs of pre-trained model. Taked image size as argument
 * **trainer_functional.py** &mdash; script with U-net's up and down layers. Also contains metrics, such as IOU and Dice coefficient.
 * **trainer.py** &mdash; script for default training U-net model. Uses pre-defined augmentation that  
-can be changed in *data_preprocessong.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.  
+can be changed in *data_preprocessing.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.  
 Order of arguments is important. In the end saves model to folder with name *my_model*
 * **trainer_balanced_data.py** &mdash; train data using balanced augmentation between 3 clusters.  
 It means that augmentation step will produce more samples for clusters with less size. Takes the same arguments as *trainer.py*.  
