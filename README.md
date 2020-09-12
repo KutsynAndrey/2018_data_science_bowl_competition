@@ -22,6 +22,8 @@
   Use it only if you have folder with pretrained model. Script takes image size as argument.  
   Use image size that was used for model training for correct predicting.  
   At line 30 you can change folder name for pre-trained model.
+  After generating in each image folder in stage1_train appears folder *predict* with Dice coefficient and predicted mask.
+  
 * **show_results.py** &mdash; script for displaying inputs and outputs of pre-trained model. Takes image size as argument
 * **trainer_functional.py** &mdash; script with U-net's up and down layers. Also contains metrics, such as IOU and Dice coefficient.
 * **trainer.py** &mdash; script for default training U-net model. Uses pre-defined augmentation that  
