@@ -27,7 +27,7 @@ train_ids = next(os.walk(train_path))[1]
 
 #stage1, stage2, or_stage1, or_stage2 = get_test(stage1_ids, stage2_ids, img_size, path1, path2)
 X, Y = get_original_train(train_ids, train_path)
-model = keras.models.load_model("my_balanced_model", custom_objects={"IOU_coef": IOU_coef})
+model = keras.models.load_model("my_balanced_modelv1", custom_objects={"IOU_coef": IOU_coef})
 
 print("GENERATE DICE COEF...")
 

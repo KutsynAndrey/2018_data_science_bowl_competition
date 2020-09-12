@@ -42,7 +42,7 @@ def base(x, filters, k_size=(3, 3), padding='same', strides=1):
 
 
 def Unet(img_size):
-    f = [16, 32, 54, 128, 256]
+    f = [16, 32, 64, 128, 256]
     inputs = keras.layers.Input((img_size, img_size, 3))
     
     pool0 = inputs

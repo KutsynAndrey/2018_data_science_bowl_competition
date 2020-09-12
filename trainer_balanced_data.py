@@ -26,7 +26,7 @@ except:
 X, Y, origin_size = get_train(train_ids, IMG_SIZE, path2train)
 
 print(X.max(), X.dtype)
-augmented_x, augmented_y = balanced_augmentation(X, Y, [1, 3, 15], IMG_SIZE)
+augmented_x, augmented_y = balanced_augmentation(X, Y, [1, 3, 20], IMG_SIZE)
 augmented_x = concatenate([augmented_x, X], axis=0)
 augmented_y = concatenate([augmented_y, Y], axis=0)
 
