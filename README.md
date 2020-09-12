@@ -25,7 +25,8 @@ Image's id is "7b38c9173ebe69b4c6ba7e703c0c27f39305d9b2910f46405993d2ea7a963b80"
   At line 30 you can change folder name for pre-trained model.  
   After generating in each image folder in stage1_train appears folder *predict* with Dice coefficient and predicted mask.
   
-* **show_results.py** &mdash; script for displaying inputs and outputs of pre-trained model. Takes image size as argument
+* **show_results.py** &mdash; script for displaying inputs and outputs of pre-trained model. Takes image size as argument.  
+Use any button to skip image and "a" to close windows.
 * **trainer_functional.py** &mdash; script with U-net's up and down layers. Also contains metrics, such as IOU and Dice coefficient.
 * **trainer.py** &mdash; script for default training U-net model. Uses pre-defined augmentation that  
 can be changed in *data_preprocessing.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.  
