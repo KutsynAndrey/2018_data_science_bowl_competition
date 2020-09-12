@@ -23,6 +23,11 @@
   Use image size that was used for model training for correct predicting.  
   At line 30 you can change folder name for pre-trained model.
 * **show_results.py** &mdash; script for displaying inputs and outputs of pre-trained model. Taked image size as argument
-* **train.py** &mdash; script for default training U-net model. Use pre-defined augmentation that  
-can be changed in *data_preprocessong.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.
-* **** &mdash;
+* **trainer_functional.py** &mdash; script with U-net's up and down layers. Also contains metrics, such as IOU and Dice coefficient.
+* **trainer.py** &mdash; script for default training U-net model. Use pre-defined augmentation that  
+can be changed in *data_preprocessong.py* at line 108. Takes 4 arguments: *image size*, *number of epochs*, *batch_size*, *learning rate*.  
+Order of arguments is important.
+* **trainer_balanced_data.py** &mdash; train data using balanced augmentation between 3 clusters.  
+It means that augmentation step will produce more samples for clusters with less size.
+* **cluster_df.csv** &mdash; pre-clustered information for images in *stage1_train* folder.
+* **filename.joblib** &mdash; pre-trained K-means model.
